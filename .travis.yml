@@ -1,0 +1,15 @@
+language: python
+
+install: true
+
+branches:
+  only:
+  - master
+
+stages:
+  - test
+
+jobs:
+  include:
+    - stage: test
+      script: pytest
